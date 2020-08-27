@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <style type="text/css">
         .main {
             width: 1170px;
             height: 846px;
             border: 1px solid black;
             margin: 0 auto;
+            overflow: hidden;
         }
 
         .header {
             width: 1170px;
             height: 70px;
             border: 1px solid black;
+            box-sizing:border-box;
+            overflow: hidden;
+            font-size: 0px;
         }
 
         .second {
@@ -25,12 +28,17 @@
             border: 1px solid black;
             font-size: 0px;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .footer {
             width: 1170px;
-            height: 68px;
+            height: 78px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
         }
 
         .left {
@@ -40,8 +48,9 @@
             display: inline-block;
             font-size: 14px;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
-
         .center {
             width: 850px;
             height: 700px;
@@ -49,71 +58,89 @@
             display: inline-block;
             font-size: 14px;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
-        .top1 {
+        .center .top1 {
             width: 850px;
-            height: 70px;
-            
+            height: 50px;
+            overflow: hidden;
+            box-sizing: border-box;
         }
 
-        .center1 {
+        .center .center1 {
             width: 850px;
-            height: 370px;
-        
-            font-size:0px;
+            height: 350px;
+            overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
+            font-size: 0px;
         }
 
-        .bottom1 {
+        .center .bottom1 {
             width: 850px;
-            height: 250px;
-           
+            height: 30  0px;
+            overflow: hidden;
+            box-sizing: border-box;
         }
 
-        .left1 {
+        .center1 .left1 {
             width: 400px;
-            height: 370px;
-
-           
+            height: 350px;
+            overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
+            display:inline-block;
+            font-size: 14px;
         }
-
-        .right1 {
-            width: 442px;
-            height: 370px;
-
-            
-        }
-
-        .top2 {
+        .center1 .right1 {
             width: 400px;
-            height: 270px;
-           
+            height: 350px;
+            overflow: hidden;
+            box-sizing: border-box;
+            display:inline-block;
+            font-size: 14px;
         }
 
-        .bottom2 {
+        .right1 .top3 {
             width: 400px;
-            height: 94px;
-            
+            height: 25%;
         }
 
-        .top3 {
-            width: 442px;
-            height: 270px;
-           
+        .right1 .bottom3 {
+            width: 400px;
+            height: 75%;
+            font-size: 18px;
+            margin-block-start: 0;
         }
 
-        .bottom3 {
-            width: 442px;
-            height: 94px;
+        .bottom3 p {
+            font-size: 18px;
+            margin-block-start: 0;
+            line-height: 45px;
+        }
 
+        .center .bottom1 {
+            width: 850px;
+            height: 300px;
+            overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
+            margin-left: 10px;
+        }
+
+        .bottom1 p {
+            font-size: 20px;
         }
 
         .right {
-            width: 158px;
+            width: 167px;
             height: 700px;
-            border: 1px solid black;
             display: inline-block;
             font-size: 14px;
+            overflow: hidden;
+            box-sizing: border-box;
             overflow: hidden;
         }
 
@@ -122,6 +149,8 @@
             height: 200px;
             border: 1px solid black;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .pro {
@@ -129,12 +158,16 @@
             height: 200px;
             border: 1px solid black;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .side {
             width: 150px;
-            height: 295px;
+            height: 300px;
             border: 1px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
             overflow: hidden;
         }
 
@@ -142,56 +175,102 @@
             width: 150px;
             height: 50px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .ct1 {
             width: 150px;
             height: 149px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .h-2{
             width: 150px;
             height: 50px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .ct2 {
             width: 150px;
             height: 149px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .banner {
-            width: 153px;
+            width: 169px;
             height: 600px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        
+
+.box{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.box2 {
+    width: 373px;
+    height: 250px;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.b2 {
+    width: 373px;
+    height: 250px;
+}
+
+.box3 {
+    width: 81px;
+    height: 80px;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.b3 {
+    width: 81px;
+    height: 80px;
+}
+
+        p {
+            word-wrap:break-word;
+        }
+
+        .title {
+            width: 15%;
+            padding-left: 15px;
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .header .contact {
+            width: 55%;
+            display: inline-block;
+            font-size: 17px;
+            padding-left: 15px;
+        }
+
+        .header .search {
+            width: 27%;
             display:inline-block;
-        }
-
-        .box{
-            width: 250px;
-            height: 200px;
-            border: 1px solid black;
-            margin-left: 10px;
-            display: inline-block;
-        }
-
-        .box2 {
-            width: 373px;
-            height: 250px;
-            border: 1px solid black;
-            margin-left: 10px;
-            margin-top: 5px;
-        }
-
-        .box3 {
-            width: 83px;
-            height: 80px;
-            border: 1px solid black;
-            margin-left: 10px;
-            margin-top: 3px;
-            display: inline-block;
+            font-size: 17px;
         }
 
     </style>
@@ -200,26 +279,52 @@
 <body>
     <div class="main">
         <div class="header">
-
+            <div class="title">
+                <h2>Side Title</h2>
+            </div>
+            <div class="contact">
+                <a href="#">Categories</a>|
+                <a href="#">Contact us</a>|
+                <a href="#">Follow us</a>
+            </div>
+            <div class="search">
+                <form>
+                    <input placeholder="Search...">
+                </form>
+            </div>
         </div>
 
         <div class="second">
             <div class="left">
                 <div class="top">
                     <div class="cate">
-                        <div class="h-1">
-
+                        <div class="h-1" style="background-color:gray;">
+                            <h2 style="text-align: center; line-height: 10px;">Category</h2>
                         </div>
                         <div class="ct1">
-
+                            <ul style="font-size:20px; margin-top:0; list-style-type:none; padding-left: 7px">
+                                <li>Item 1...</li>
+                                <li>Item 2...</li>
+                                <li>Item 3...</li>
+                                <li>Item 4...</li>
+                                <li>Item 5...</li>
+                                <li>Item 6...</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="pro">
-                        <div class="h-2">
-
+                        <div class="h-2" style="background-color:gray;">
+                            <h2 style="text-align: center; line-height: 10px;">Top Products</h2>
                         </div>
                         <div class="ct2">
-
+                            <ul style="font-size:20px; margin-top:0; list-style-type:none; padding-left: 7px">
+                                <li>Item 1...</li>
+                                <li>Item 2...</li>
+                                <li>Item 3...</li>
+                                <li>Item 4...</li>
+                                <li>Item 5...</li>
+                                <li>Item 6...</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="side">
@@ -227,35 +332,61 @@
                     </div>
                 </div>
             </div>
-            <div class="center">
-                <div class="top1">
+            
 
-                </div>
-                <div class="center1">
-                    <div class="left1">
-                        <div class="top2">
-                            <div class="box2"></div>
-                        </div>
-                        <div class="bottom2">
-                            <div class="box3"></div>
-                            <div class="box3"></div>
-                            <div class="box3"></div>
-                            <div class="box3"></div>
-                        </div>
-                    </div>
-                    <div class="right1">
-                        <div class="top3">
-
-                        </div>
-                        <div class="bottom3">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom1">
-
+<div class="center">
+    <div class="top1">
+        <h2 style="padding-left: 15px;">Home > Main Category > Sub category</h2>
+    </div>
+    <div class="center1">
+        <div class="left1">
+            <div class="top2">
+                <div class="box2">
+                    <img src="images/hinh.jpg" class="b2">
                 </div>
             </div>
+            <div class="bottom2">
+                <div class="box3">
+                    <img src="images/hinh.jpg" class="b3">
+                </div>
+                <div class="box3">
+                    <img src="images/hinh.jpg" class="b3">
+                </div>
+                <div class="box3">
+                    <img src="images/hinh.jpg" class="b3">
+                </div>
+                <div class="box3">
+                    <img src="images/hinh.jpg" class="b3">
+                </div>
+            </div>
+        </div>
+        <div class="right1">
+            <div class="top3">
+                <h2 style="font-size:30px; margin-top:10px;">Sample Product Title</h2>
+                <strong style="font-size:25px; line-height: 10px;">Summary:</strong>
+            </div>
+            <div class="bottom3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    . Dicta maiores deleniti, animi non laboriosam quaerat 
+                    inventore ratione natus dolores ullam sint cum. Illum magnam
+                     ut nesciunt qui! Cumque, illo magnam!</p>
+                
+                <div class="buy2" style="text-align: center;">
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom1">
+        <h2>Description</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing </p>
+    </div>
+</div>
+
             <div class="right">
                 <div class="banner">
 
@@ -265,8 +396,25 @@
 
 
         <div class="footer">
-
+            <p>
+                Footer Information ... <br>
+                <a href="#">Link 1</a> |
+                <a href="#">Link 2</a> |
+                <a href="#">Link 3</a>
+            </p>
         </div>
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

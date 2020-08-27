@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <style type="text/css">
         .main {
             width: 1170px;
             height: 846px;
             border: 1px solid black;
             margin: 0 auto;
+            overflow: hidden;
         }
 
         .header {
             width: 1170px;
             height: 70px;
             border: 1px solid black;
+            box-sizing:border-box;
+            overflow: hidden;
+            font-size: 0px;
         }
 
         .second {
@@ -25,12 +28,17 @@
             border: 1px solid black;
             font-size: 0px;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .footer {
             width: 1170px;
-            height: 70px;
+            height: 78px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
         }
 
         .left {
@@ -39,6 +47,8 @@
             border: 1px solid black;
             display: inline-block;
             font-size: 14px;
+            overflow: hidden;
+            box-sizing: border-box;
             overflow: hidden;
         }
 
@@ -49,14 +59,18 @@
             display: inline-block;
             font-size: 14px;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .right {
-            width: 160px;
+            width: 167px;
             height: 700px;
             border: 1px solid black;
             display: inline-block;
             font-size: 14px;
+            overflow: hidden;
+            box-sizing: border-box;
             overflow: hidden;
         }
 
@@ -65,6 +79,8 @@
             height: 200px;
             border: 1px solid black;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .pro {
@@ -72,12 +88,16 @@
             height: 200px;
             border: 1px solid black;
             overflow: hidden;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .side {
             width: 150px;
-            height: 295px;
+            height: 300px;
             border: 1px solid black;
+            overflow: hidden;
+            box-sizing: border-box;
             overflow: hidden;
         }
 
@@ -85,38 +105,98 @@
             width: 150px;
             height: 50px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .ct1 {
             width: 150px;
             height: 149px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .h-2{
             width: 150px;
             height: 50px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .ct2 {
             width: 150px;
             height: 149px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .banner {
-            width: 160px;
+            width: 165px;
             height: 600px;
             border: 1px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
         .box{
             width: 250px;
-            height: 200px;
+            height: 220px;
             border: 1px solid black;
             margin-left: 15px;
+            margin-bottom: 10px;
             display: inline-block;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .box .img {
+            width:220px;
+            height: 140px;
+            margin: 10px;
+        }
+
+        img {
+            width: 220px;
+            height: 140px;
+        }
+
+        .box .price {
+            width: 250px;
+            height: 20px;
+            text-align: center;
+        }
+
+        .box .buy {
+            width: 250px;
+            height: 30px;
+            text-align: center;
+        }
+
+        p {
+            word-wrap:break-word;
+        }
+
+        .title {
+            width: 15%;
+            padding-left: 15px;
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .header .contact {
+            width: 55%;
+            display: inline-block;
+            font-size: 17px;
+            padding-left: 15px;
+        }
+
+        .header .search {
+            width: 27%;
+            display:inline-block;
+            font-size: 17px;
         }
 
     </style>
@@ -125,26 +205,52 @@
 <body>
     <div class="main">
         <div class="header">
-
+            <div class="title">
+                <h2>Side Title</h2>
+            </div>
+            <div class="contact">
+                <a href="#">Categories</a>|
+                <a href="#">Contact us</a>|
+                <a href="#">Follow us</a>
+            </div>
+            <div class="search">
+                <form>
+                    <input placeholder="Search...">
+                </form>
+            </div>
         </div>
 
         <div class="second">
             <div class="left">
                 <div class="top">
                     <div class="cate">
-                        <div class="h-1">
-
+                        <div class="h-1" style="background-color:gray;">
+                            <h2 style="text-align: center; line-height: 10px;">Category</h2>
                         </div>
                         <div class="ct1">
-
+                            <ul style="font-size:20px; margin-top:0; list-style-type:none; padding-left: 7px">
+                                <li>Item 1...</li>
+                                <li>Item 2...</li>
+                                <li>Item 3...</li>
+                                <li>Item 4...</li>
+                                <li>Item 5...</li>
+                                <li>Item 6...</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="pro">
-                        <div class="h-2">
-
+                        <div class="h-2" style="background-color:gray;">
+                            <h2 style="text-align: center; line-height: 10px;">Top Products</h2>
                         </div>
                         <div class="ct2">
-
+                            <ul style="font-size:20px; margin-top:0; list-style-type:none; padding-left: 7px">
+                                <li>Item 1...</li>
+                                <li>Item 2...</li>
+                                <li>Item 3...</li>
+                                <li>Item 4...</li>
+                                <li>Item 5...</li>
+                                <li>Item 6...</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="side">
@@ -153,13 +259,73 @@
                 </div>
             </div>
             <div class="center">
-                <h1>abc</h1>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <h1 style="padding-left:30px;">Top Products</h1>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/hinh.jpg">
+                    </div>
+                    <div class="price">
+                        Price: 10$
+                    </div>
+                    <div class="buy">
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/hinh.jpg">
+                    </div>
+                    <div class="price">
+                        Price: 10$
+                    </div>
+                    <div class="buy">
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/hinh.jpg">
+                    </div>
+                    <div class="price">
+                        Price: 10$
+                    </div>
+                    <div class="buy">
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/hinh.jpg">
+                    </div>
+                    <div class="price">
+                        Price: 10$
+                    </div>
+                    <div class="buy">
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/hinh.jpg">
+                    </div>
+                    <div class="price">
+                        Price: 10$
+                    </div>
+                    <div class="buy">
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="images/hinh.jpg">
+                    </div>
+                    <div class="price">
+                        Price: 10$
+                    </div>
+                    <div class="buy">
+                        <button type="button">Buy Now</button>
+                    </div>
+                </div>
             </div>
             <div class="right">
                 <div class="banner">
@@ -170,7 +336,12 @@
 
 
         <div class="footer">
-
+            <p>
+                Footer Information ... <br>
+                <a href="#">Link 1</a> |
+                <a href="#">Link 2</a> |
+                <a href="#">Link 3</a>
+            </p>
         </div>
     </div>
 </body>
